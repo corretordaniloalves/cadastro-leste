@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Terreno ou Casa Pronta</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2, h3 {
+      text-align: center;
+      color: #004aad;
+    }
+    p {
+      line-height: 1.6;
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    label {
+      font-weight: bold;
+    }
+    input, select {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 12px;
+      font-size: 18px;
+      background-color: #004aad;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #00317e;
+    }
+    .info {
+      margin-top: 30px;
+    }
+    .info ul {
+      padding-left: 20px;
+    }
+    .info li {
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>VOCÊ FOI ESCOLHIDO!</h1>
+    <h2>LANÇAMENTO PACAEMBU & MRV</h2>
+    <h3>Terreno ou Casa Pronta? VOCÊ DECIDE!</h3>
+    <p>📍 Região do Novo Shopping (Avenida Henry Nestle)</p>
+
+    <form action="#" method="POST">
+      <label>Você prefere:</label>
+      <select name="preferencia" required>
+        <option value="Casa">Casa</option>
+        <option value="Terreno">Terreno</option>
+        <option value="Tanto faz">Tanto faz</option>
+      </select>
+
+      <label>Seu Nome:</label>
+      <input type="text" name="nome" required>
+
+      <label>Seu Telefone:</label>
+      <input type="tel" name="telefone" required>
+
+      <label>Sua Renda média familiar:</label>
+      <input type="text" name="renda" required>
+
+      <label>Seu CPF:</label>
+      <input type="text" name="cpf" required>
+
+      <button type="submit">ENVIAR CADASTRO</button>
+    </form>
+
+    <div class="info">
+      <h3>Você foi escolhido para um dos lançamentos mais esperados do ano!</h3>
+      <p>Terrenos a partir de 160 metros, próximo da Avenida Henry Nestle.</p>
+      <p>Direto com a construtora. Sem burocracia!</p>
+      <h4>Documentos necessários para escolher seu lote:</h4>
+      <ul>
+        <li>RG, CPF ou CNH</li>
+        <li>Certidão de Estado Civil</li>
+        <li>Comprovante de endereço</li>
+      </ul>
+      <p><strong>OBS:</strong> Cliente casado deve apresentar a documentação de ambos.</p>
+    </div>
+  </div>
+</body>
+</html>
